@@ -9,23 +9,31 @@
 }
 
 @media (min-width: 600px) {
-    .container{
+    .container {
         max-width: 65%;
     }
 }
 
-.display, .buttonGroup  {
+.display, .buttonGroup {
     width: 90%;
     margin: 1em;
     border-radius: 10px;
 }
 
-.display {
-    background-color: wheat;
+.display, .input {
     color: purple;
+    background-color: wheat;
     font-weight: bold;
+}
+
+.input {
+    height: 2em;
+}
+
+.display {
     font-size: 2em;
 }
+
 
 .buttonGroup {
     display: flex;
@@ -38,11 +46,16 @@
     width: 30%;
     margin: 1em;
     padding: 0.5em;
-    border-radius: 3px;
     background-color: purple;
     color: inherit;
     font-weight: bold;
     border: 1px solid wheat;
+}
+
+
+.buttonGroup button,
+.input {
+    border-radius: 5px;
 }
 
 .error {

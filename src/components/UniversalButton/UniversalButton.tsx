@@ -2,7 +2,7 @@ import React from 'react';
 
 type buttonProps = {
   title: string
-  cbHandler: ()=> void
+  cbHandler: () => void
   isError?: boolean
 }
 
