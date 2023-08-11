@@ -1,0 +1,39 @@
+.container {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid green;
+    border-radius: 10px;
+}
+
+.display, .buttonGroup  {
+    width: 90%;
+    margin: 1em;
+    border-radius: 10px;
+}
+
+.display {
+    min-height: 15vh;
+    background-color: green;
+    color: navy;
+    font-weight: bold;
+    font-size: 3em;
+}
+
+.buttonGroup {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid green;
+}
+
+.buttonGroup button {
+    width: 30%;
+    margin: 1em;
+    padding: 0.5em;
+    border-radius: 3px;
+    background-color: navy;
+    color: green;
+    font-weight: bold;
+}
