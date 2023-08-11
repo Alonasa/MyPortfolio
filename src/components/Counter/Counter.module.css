@@ -1,10 +1,17 @@
 .container {
-    width: 50%;
+    width: 90%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    border: 2px solid green;
+    border: 5px solid purple;
     border-radius: 10px;
+    color: wheat;
+}
+
+@media (min-width: 600px) {
+    .container{
+        max-width: 65%;
+    }
 }
 
 .display, .buttonGroup  {
@@ -14,18 +21,17 @@
 }
 
 .display {
-    min-height: 15vh;
-    background-color: green;
-    color: navy;
+    background-color: wheat;
+    color: purple;
     font-weight: bold;
-    font-size: 3em;
+    font-size: 2em;
 }
 
 .buttonGroup {
     display: flex;
     align-items: center;
     justify-content: center;
-    border: 2px solid green;
+    border: 5px solid wheat;
 }
 
 .buttonGroup button {
@@ -33,7 +39,16 @@
     margin: 1em;
     padding: 0.5em;
     border-radius: 3px;
-    background-color: navy;
-    color: green;
+    background-color: purple;
+    color: inherit;
     font-weight: bold;
+    border: 1px solid wheat;
+}
+
+.error {
+    color: #9059c7;
+}
+
+button:disabled {
+    opacity: 0.5;
 }
